@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-security-policy" content="default-src 'none'; style-src 'self' https://unpkg.com; script-src 'self' https://unpkg.com; img-src 'self' data:; base-uri 'none'; form-action 'self'; connect-src 'self' ws:;">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>SKTTT</title>
+
+    <script src="https://unpkg.com/umbrellajs@2.10.1/umbrella.min.js" integrity="sha384-YrT7K336m2v2IL1u1EfNyCAy6IZRirvBff8NKkcIzhEGUm7brd0mOsxwNWUmw2G6" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>
+    <form method="post" action="/request" id="request-socket">
+      <input type="submit" value="Request">
+    </form>
+
+    <form method="post" id="publisher">
+      <input type="submit" value="Send">
+      <input name="message">
+    </form>
+
+    <ol id="subscriber">
+    </ol>
+  </body>
+</html>
