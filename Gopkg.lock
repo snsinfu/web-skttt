@@ -10,8 +10,7 @@
 [[projects]]
   name = "github.com/docopt/docopt-go"
   packages = ["."]
-  revision = "784ddc588536785e7299f7272f39101f7faccc3f"
-  version = "0.6.2"
+  revision = "ee0de3bc6815ee19d4a46c7eb90f829db0e014b1"
 
 [[projects]]
   name = "github.com/gorilla/websocket"
@@ -81,6 +80,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f4029dcab2d147c1c507e2ce2e222888ba81a3eefda40915318346154ac55cd7"
+  inputs-digest = "817f5e964055c10f6a55f42e0543c43d992828a76bdfff5f7506e4df40ddfa10"
   solver-name = "gps-cdcl"
   solver-version = 1
