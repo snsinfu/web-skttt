@@ -46,7 +46,9 @@ func main() {
 	e.POST("/:topic", act.PostTopic)
 	e.POST("/:topic/:key", act.PostTopic)
 	e.POST("/request", act.PostRequest)
-	e.Static("/", "public")
+
+	e.File("/", "public/index.html")
+	e.File("/index.js", "public/index.js")
 
 	e.Logger.Fatal(e.Start(":" + os.Getenv("PORT")))
 }
